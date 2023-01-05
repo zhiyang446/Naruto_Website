@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Naruto</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-2 w3-center">
+			<ul class="nav flex-column">
+				<li class="nav-item">
+					<a href="index.html"><img src="picture/logo.gif" style="width: 90%;"></a>
+				</li>
+				<li class="nav-item">
+					<a href="introdution.html" class="w3-button w3-hover-orange fontstyle">Introdution</a>
+				</li>
+				<li class="nav-item">
+					<a href="ninja_abilities.html" class="w3-button w3-hover-orange fontstyle">Ninja Abilities</a>
+				</li>
+				<li class="nav-item">
+					<a href="tailed_beasts.html" class="w3-button w3-hover-orange fontstyle">Tailed Beasts</a>
+				</li>
+				<li class="nav-item">
+					<a href="charactor.html" class="w3-button w3-hover-orange fontstyle">Main Charactor</a>
+				</li>
+				<li class="nav-item">
+					<a href="link.html" class="w3-button w3-hover-orange fontstyle">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="author.html" class="w3-button w3-hover-orange fontstyle">Author</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-10">
+			<div class="title">
+				<p>Main Character</p>
+			</div>
+			<div class="grid-container">
+				<div>
+					<a href="charactor/naruto.html"><img src="picture/ch_naruto.png">
+					<p>Naruto Uzumaki</p></a>
+				</div>
+				<div>
+					<a href="charactor/sasuke.html"><img src="picture/sasuke.png">
+					<p>Sasuke Uchiha</p></a>
+				</div>
+				<div>
+					<a href="charactor/kakashi.html"><img src="picture/kakashi.png">
+					<p>Kakashi Hatake</p></a>
+				</div>
+				<div>
+					<a href="charactor/sakura.html"><img src="picture/sakura.png">
+					<p>Sakura Haruno</p></a>
+				</div>
+				<div>
+					<a href="charactor/itachi.html"><img src="picture/itachi.png">
+					<p>Itachi Uchiha</p></a>
+				</div>
+				<div>
+					<a href="charactor/shikamaru.html"><img src="picture/Shikamuru.png">
+					<p>Shikamuru Nara</p></a>
+				</div>
+				<div>
+					<a href="charactor/minato.html"><img src="picture/Minato.png">
+					<p>Minato Namizake</p></a>
+				</div>
+				<div>
+					<a href="charactor/jiraiya.html"><img src="picture/Jiraiya.png">
+					<p>Jiraiya</p></a>
+				</div>
+				<div>
+					<a href="charactor/gaara.html"><img src="picture/Gaara.png">
+					<p>Gaara</p></a>
+				</div>
+				<div>
+					<a href="charactor/neji.html"><img src="picture/Neji.png">
+					<p>Neji Hyuga</p></a>
+				</div>
+				<div>
+					<a href="charactor/madara.html"><img src="picture/Madara.png">
+					<p>Madara Uchiha</p></a>
+				</div>
+				<div>
+					<a href="charactor/obito.html"><img src="picture/Obito.png">
+					<p>Obito Uchiha</p></a>
+				</div>
+				<div>
+					<a href="charactor/hashirama.html"><img src="picture/Hashirama.png">
+					<p>Hashirama Senju</p></a>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	var dropdown = document.getElementsByClassName("dropdown-btn");
+	var i;
+
+	for (i = 0; i < dropdown.length; i++) {
+		dropdown[i].addEventListener("click", function() {
+			this.classList.toggle("actives");
+			var dropdownContent = this.nextElementSibling;
+			if (dropdownContent.style.display === "block") {
+				dropdownContent.style.display = "none";
+			} else {
+				dropdownContent.style.display = "block";
+			}
+		});
+	}
+</script>
+</body>
+</html>

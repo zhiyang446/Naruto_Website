@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Naruto</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-2 w3-center">
+			<ul class="nav flex-column">
+				<li class="nav-item">
+					<a href="index.html"><img src="../picture/logo.gif" style="width: 90%;"></a>
+				</li>
+				<li class="nav-item">
+					<a href="../introdution.html" class="w3-button w3-hover-orange fontstyle">Introdution</a>
+				</li>
+				<li class="nav-item">
+					<a href="../ninja_abilities.html" class="w3-button w3-hover-orange fontstyle">Ninja Abilities</a>
+				</li>
+				<div class="dropdown">
+					<button class="dropdown-btn fontstyle">Tailed Beasts<i class="fa fa-caret-down"></i></button>
+					<div class="dropdown-content">
+						<a href="shukaku.html">Shukaku</a>
+						<a href="matatabi.html">Matatabi</a>
+						<a href="isobu.html">Isobu</a>
+						<a href="son_goku.html">Son Goku</a>
+						<a href="kokuo.html">Kokuo</a>
+						<a href="saiken.html">Saiken</a>
+						<a href="chomei.html">Chomei</a>
+						<a href="gyuki.html">Gyuki</a>
+						<a href="kurama.html">Kurama</a>
+						<a href="ten_tails.html">Ten-Tails</a>
+					</div>
+				</div>
+				<li class="nav-item">
+					<a href="../charactor.html" class="w3-button w3-hover-orange fontstyle">Main Charactor</a>
+				</li>
+				<li class="nav-item">
+					<a href="../link.html" class="w3-button w3-hover-orange fontstyle">Link</a>
+				</li>
+				<li class="nav-item">
+					<a href="../author.html" class="w3-button w3-hover-orange fontstyle">Author</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-10">
+			<div class="container_1 rounded" style="background-color: #2b4fb8;">
+				<div> <span class="fa fa-quote-left" id="right"></span> </div>
+				<div class="tailed_img"> <img src="../picture/Matatabi.png" alt=""> </div>
+				<div class="blue" style="background-color: rgb(0, 0, 0);">
+					<h3>Matatabi (又旅, Matatabi), more commonly known as the Two-Tails (ニ尾, Nibi), is one of the nine tailed beasts. It was last sealed within Yugito Nii of Kumogakure.</h3>
+					<div class="fa fa-quote-right" id="right"></div>
+					<div>
+						<h4>Matatabi</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+				this.classList.toggle("actives");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+	</script>
+</body>
+</html>
